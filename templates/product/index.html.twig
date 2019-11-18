@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formulaire produit{% endblock %}
+
+{% block body %}
+
+<div class="container mt-5">
+        <div class="bg-light py-3 px-3" style=" border: 1px solid black">
+            <h1 style="text-align:center">
+                Ajouter produit
+            </h1>
+
+
+            {{ form_start(form) }}
+
+            {{ form_widget(form) }}
+
+            <p style="text-align:center">
+                <button type="submit" class="btn btn-primary">
+                    Ajouter
+                </button>
+            </p>
+
+            {{ form_end(form) }}
+
+        </div>
+    </div>
+
+{% endblock %}
